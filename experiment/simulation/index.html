@@ -1,13 +1,114 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<!-- Add CSS at the head of HTML file -->
-    <link rel="stylesheet" href="./css/main.css">
-</head>
-<body>
-		<!-- Your code goes here-->
 
-	<!-- Add JS at the bottom of HTML file --> 
-        <script src="./js/main.js"></script>
+<head>
+	<title> Exception Handling </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+	<main class="container">		
+		<div class="box">
+			<h3 class="header">Let's learn Exceptions!</h3>
+			<p style="text-align: center;margin-top: 2.5rem;">Which exception would you like to practice?</p>
+			<select autocomplete="off" name="exception-name" id="exception-name" onchange="changeExperiment()">
+				<option selected value="ValueError">ValueError</option>
+				<option value="KeyError">KeyError</option>
+				<option value="IndexError">IndexError</option>
+				<option value="ZeroDivisionError">ZeroDivisionError</option>
+			</select>
+		</div>
+			
+		<div class="ValueError box">
+			<h4 class="header">Generate an Exception</h4>
+			<p>Can you generate a Value Error? </p>
+			<pre class="prettyprint code lang-py" style="border: none;">
+>>> import math
+>>> n = int(input("Enter a positive number: "))
+<input type="text" id="num" onchange="TestValueError()"/>
+>>> print(f'Square Root of {n} is {math.sqrt(n)}')
+				<p id="demo"></p>
+			</pre>
+			<div id="reward"></div>
+			<button id="refresh" onclick="Refresh()" style="display: none">Try Again?</button>
+		</div>
+		
+		<div class="ValueError box wide">
+			<h4 class="header">Applications of Exception Handling</h4>
+			<p style="text-align:center">Fill in the blanks to make a program that takes number of students as input 
+				and handle errors</p>
+			<pre class="prettyprint lang-py" style="border: none; margin-top: 1.5rem;">
+try:
+    input = "10"
+
+    # typecast input to correct data type
+    number_of_students = <div class="nocode exception"><select autocomplete="off" name="Int" id="int">
+		<option hidden disabled selected value></option>
+		<option value="str">str</option>
+		<option value="int">int</option>
+		<option value="float">float</option>
+	</select></div>(input)
+    average_marks = total_marks/number_of_students
+	
+except <div class="nocode exception"><select autocomplete="off" name="Exception" id="exception">
+		<option hidden disabled selected value></option>
+		<option value="ValueError">ValueError</option>
+		<option value="ZeroDivisionError">ZeroDivisionError</option>
+		<option value="NameError">NameError</option>
+	</select></div>:
+    print("Number of students has to be an Integer")
+			</pre>
+				
+			<button type="submit" onclick="handleSubmit()" id="submit">Submit</button>
+			<p class="Answer"></p>
+		</div>
+			
+		<div class="KeyError box">
+			<h4 class="header">Generate an Exception</h4>
+			<p>Can you generate a Value Error? </p>
+			<pre class="prettyprint code lang-py" style="border: none;">
+>>> age = {'John': 30,'Adam': 28,'Jake':37}
+>>> name = input("Which employee's age do you want: ")
+<input type="text" id="name" onchange="TestKeyError()"/>
+>>> print(f'Age of ${name} is ${age[name]}')
+				<p id="demoKey"></p>
+			</pre>
+			<div id="rewardKey"></div>
+			<button id="refreshKey" onclick="Refresh()" style="display: none">Try Again?</button>
+		</div>
+			
+			
+		<div class="KeyError box">
+			<h4 class="header">Applications of Exception Handling</h4>
+
+		</div>
+		
+		<div class="IndexError box">
+			<h4 class="header">Generate an Exception</h4>
+			
+		</div>
+			
+		<div class="IndexError box">
+			<h4 class="header">Applications of Exception Handling</h4>
+
+		</div>
+		
+		<div class="ZeroDivisionError box">
+			<h4 class="header">Generate an Exception</h4>
+			
+		</div>
+		
+		<div class="ZeroDivisionError box">
+			<h4 class="header">Applications of Exception Handling</h4>
+			
+		</div>
+			
+	</main>
+		
+	<script src="./js/main.js"></script>
 </body>
+
 </html>

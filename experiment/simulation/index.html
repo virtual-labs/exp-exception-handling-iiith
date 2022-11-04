@@ -5,55 +5,69 @@
 	<title> Exception Handling </title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./style.css">
 	<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
-	<link rel="stylesheet" href="./css/main.css">
+	<script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
 </head>
 
 <body>
-	<main class="container">		
-		<div class="box">
+	<main class="container">
+		<div class="box thin">
 			<h3 class="header">Let's learn Exceptions!</h3>
 			<p style="text-align: center;margin-top: 2.5rem;">Which exception would you like to practice?</p>
 			<select autocomplete="off" name="exception-name" id="exception-name" onchange="changeExperiment()">
-				<option selected value="ValueError">ValueError</option>
-				<option value="KeyError">KeyError</option>
-				<option value="IndexError">IndexError</option>
-				<option value="ZeroDivisionError">ZeroDivisionError</option>
+				<option selected value="value-error">ValueError</option>
+				<option value="key-error">KeyError</option>
+				<option value="index-error">IndexError</option>
+				<option value="zero-division-error">ZeroDivisionError</option>
 			</select>
 		</div>
-			
-		<div class="ValueError box">
+
+		<div class="value-error box">
 			<h4 class="header">Generate an Exception</h4>
 			<p>Can you generate a Value Error? </p>
 			<pre class="prettyprint code lang-py" style="border: none;">
 >>> import math
->>> n = int(input("Enter a positive number: "))
-<input type="text" id="num" onchange="TestValueError()"/>
->>> print(f'Square Root of {n} is {math.sqrt(n)}')
-				<p id="demo"></p>
-			</pre>
-			<div id="reward"></div>
-			<button id="refresh" onclick="Refresh()" style="display: none">Try Again?</button>
+>>> ball = int(input("Enter a positive number: "))
+<input type="text" id="num" onchange="testValueError()"/>
+>>> bucket = math.sqrt(n)
+>>> print(f'Square Root of {n} is {bucket}')
+                    <p id="demo-value"></p>
+                </pre>
+			<div id="reward-value"></div>
+			<button id="refresh-value" onclick="window.location.reload()" style="display: none">Try Again?</button>
+			<div class="pivot" id="pivot-value">
+				<div class="ball" id="ball-value">
+					<div id="hap-value" class="mouth-happy" style="display: none"></div>
+					<div id="ok-value" class="mouth-ok" style="display: block"></div>
+					<div id="sho-value" class="mouth-shock" style="display: none"></div>
+					<div class="eyes">
+						<div class="right"></div>
+						<div class="left"></div>
+					</div>
+				</div>
+			</div>
+			<div id="bucket-value" class="bucket"></div>
 		</div>
-		
-		<div class="ValueError box wide">
+
+		<div class="value-error box">
 			<h4 class="header">Applications of Exception Handling</h4>
-			<p style="text-align:center">Fill in the blanks to make a program that takes number of students as input 
-				and handle errors</p>
-			<pre class="prettyprint lang-py" style="border: none; margin-top: 1.5rem;">
+			<p style="text-align:center">Fill in the blanks to make a program that takes number of <br>students as input
+				and calculates average marks</p>
+			<pre class="prettyprint code lang-py">
 try:
     input = "10"
 
     # typecast input to correct data type
-    number_of_students = <div class="nocode exception"><select autocomplete="off" name="Int" id="int">
+    number_of_students = <div class="nocode exception"><select autocomplete="off" name="Value" id="value">
 		<option hidden disabled selected value></option>
 		<option value="str">str</option>
 		<option value="int">int</option>
-		<option value="float">float</option>
+		<option value="bool">bool</option>
 	</select></div>(input)
     average_marks = total_marks/number_of_students
 	
-except <div class="nocode exception"><select autocomplete="off" name="Exception" id="exception">
+except <div class="nocode exception"><select autocomplete="off" name="Exception" id="exceptionValue">
 		<option hidden disabled selected value></option>
 		<option value="ValueError">ValueError</option>
 		<option value="ZeroDivisionError">ZeroDivisionError</option>
@@ -61,54 +75,192 @@ except <div class="nocode exception"><select autocomplete="off" name="Exception"
 	</select></div>:
     print("Number of students has to be an Integer")
 			</pre>
-				
-			<button type="submit" onclick="handleSubmit()" id="submit">Submit</button>
-			<p class="Answer"></p>
+
+			<button type="submit" onclick="handleSubmitValue()" id="submit">Submit</button>
+			<p class="answer-value"></p>
 		</div>
-			
-		<div class="KeyError box">
+
+		<div class="key-error box">
 			<h4 class="header">Generate an Exception</h4>
-			<p>Can you generate a Value Error? </p>
+			<p>Can you generate an Key Error? </p>
 			<pre class="prettyprint code lang-py" style="border: none;">
->>> age = {'John': 30,'Adam': 28,'Jake':37}
->>> name = input("Which employee's age do you want: ")
-<input type="text" id="name" onchange="TestKeyError()"/>
->>> print(f'Age of ${name} is ${age[name]}')
-				<p id="demoKey"></p>
+>>> paint_buckets: {
+	"blue": 0,
+	"green": 1,
+	"red": 2
+}
+>>> paint = int(input("Paint the ball: "))
+<input type="text" id="gen-key" onchange="testKeyError()"/>
+>>> bucket_id = paint_buckets[paint]
+>>> ball = paint_buckets[bucket_id]
+				<p id="demo-key"></p>
 			</pre>
-			<div id="rewardKey"></div>
-			<button id="refreshKey" onclick="Refresh()" style="display: none">Try Again?</button>
+			<div id="reward-key"></div>
+			<button id="refresh-key" onclick="window.location.reload()" style="display: none">Try Again?</button>
+			<div id="pivot-key" class="pivot">
+				<div id="ball-key" class="ball">
+					<div id="hap-key" class="mouth-happy" style="display: none"></div>
+					<div id="ok-key" class="mouth-ok" style="display: block"></div>
+					<div id="sho-key" class="mouth-shock" style="display: none"></div>
+					<div class="eyes">
+						<div class="right"></div>
+						<div class="left"></div>
+					</div>
+				</div>
+			</div>
+			<div class="bucket id1"></div>
+			<div class="bucket id2"></div>
+			<div class="bucket id3"></div>
 		</div>
-			
-			
-		<div class="KeyError box">
-			<h4 class="header">Applications of Exception Handling</h4>
 
-		</div>
-		
-		<div class="IndexError box">
-			<h4 class="header">Generate an Exception</h4>
-			
-		</div>
-			
-		<div class="IndexError box">
-			<h4 class="header">Applications of Exception Handling</h4>
 
-		</div>
-		
-		<div class="ZeroDivisionError box">
-			<h4 class="header">Generate an Exception</h4>
-			
-		</div>
-		
-		<div class="ZeroDivisionError box">
+		<div class="key-error box">
 			<h4 class="header">Applications of Exception Handling</h4>
-			
+			<p style="text-align:center;">Fill in the blanks to make a program that finds out<br>the employee ID of
+				given employee</p>
+			<pre class="code prettyprint lang-py">
+IDs = {'Richard':1,'John':2,'James':3}
+try:
+	
+    # Calculate employee_id
+    employee_id = IDs[<div class="nocode exception"><select autocomplete="off" name="Key" id="key">
+		<option hidden disabled selected value></option>
+		<option value="Karthik">'Karthik'</option>
+		<option value="John">'John'</option>
+		<option value="JAMES">'JAMES'</option>
+	</select></div>]
+    print(f'ID is {employee_id}')
+
+except <div class="nocode exception"><select autocomplete="off" name="Exception" id="exceptionKey">
+	<option hidden disabled selected value></option>
+	<option value="KeyError">KeyError</option>
+	<option value="ValueError">ValueError</option>
+	<option value="NameError">NameError</option>
+</select></div>:
+    print("Employee not found")
+			</pre>
+			<button type="submit" onclick="handleSubmitKey()" id="submit">Submit</button>
+			<p class="answer-key"></p>
 		</div>
-			
+
+		<div class="index-error box">
+			<h4 class="header">Generate an Exception</h4>
+			<p>Can you generate an Index Error? </p>
+			<pre class="prettyprint code lang-py" style="border: none;">
+>>> num_buckets = 3
+>>> bucket_idx = int(input("Assign a bucket to the ball: "))
+<input type="text" id="bucket" onchange="testIndexError()"/>
+>>> ball = bucket[bucket_idx]
+                    <p id="demo-index"></p>
+                </pre>
+			<div id="reward-index"></div>
+			<button id="refresh-index" onclick="window.location.reload()" style="display: none">Try Again?</button>
+			<div id="piv-index" class="pivot">
+				<div id="ball-index" class="ball">
+					<div id="hap-index" class="mouth-happy" style="display: none"></div>
+					<div id="ok-index" class="mouth-ok" style="display: block"></div>
+					<div id="sho-index" class="mouth-shock" style="display: none"></div>
+					<div class="eyes">
+						<div class="right"></div>
+						<div class="left"></div>
+					</div>
+				</div>
+			</div>
+			<div class="bucket i1"></div>
+			<div class="bucket i2"></div>
+			<div class="bucket i3"></div>
+		</div>
+
+		<div class="index-error box">
+			<h4 class="header">Applications of Exception Handling</h4>
+			<p style="text-align: center;">Fill in the blanks to make a program that puts value<br> at index position in
+				the array</p>
+			<pre class="code prettyprint lang-py">
+array = [1,123,1,2,5,14,2,41,5,1]
+try:
+    index = <div class="nocode exception"><select autocomplete="off" name="index" id="index">
+		<option hidden disabled selected value></option>
+		<option value="-1">-1</option>
+		<option value="10">10</option>
+		<option value="p">p</option>
+	</select></div>
+    value = 50
+    array[index] = value
+
+except <div class="nocode exception"><select autocomplete="off" name="exception-index" id="exception-index">
+	<option hidden disabled selected value></option>
+	<option value="IndexError">IndexError</option>
+	<option value="KeyError">KeyError</option>
+	<option value="ValueError">ValueError</option>
+</select></div>:
+    print("Index does not exist")
+
+except <div class="nocode exception"><select autocomplete="off" name="exception-index2" id="exception-index2">
+	<option hidden disabled selected value></option>
+	<option value="IndexError">NameError</option>
+	<option value="KeyError">KeyError</option>
+	<option value="ValueError">ValueError</option>
+</select></div>:
+    print("Please enter numbers only")
+			</pre>
+			<button type="submit" onclick="handleSubmitIndex()" id="submit">Submit</button>
+			<p class="answer-index"></p>
+		</div>
+
+		<div class="zero-division-error box">
+			<h4 class="header">Generate an Exception</h4>
+			<p>Can you generate an ZeroDivision Error? </p>
+			<pre class="prettyprint code lang-py" style="border: none;">
+>>> num_balls = 10
+>>> division_bucket = int(input("Let's do modulus: "))
+<input type="text" id="zero" onchange="testZeroError()"/>
+>>> rem_balls = num_balls % division_bucket
+>>> print("{num_balls} % {division_bucket} is {rem_balls}.")
+                    <p id="demo-zero"></p>
+                </pre>
+			<div id="reward-zero"></div>
+			<button id="refresh-zero" onclick="window.location.reload()" style="display: none">Try Again?</button>
+			<div id="pivot-zero" class="pivot">
+				<div class="b1" id="ball-zero">
+					<div id="dividend" class="dividend">10</div>
+				</div>
+			</div>
+			<div class="bucket" id="bucket-zero">
+				<div id="division" class="division" style="display: none"></div>
+			</div>
+		</div>
+
+		<div class="zero-division-error box">
+			<h4 class="header">Applications of Exception Handling</h4>
+			<p style="text-align: center;">Fill in the blanks to make a program that splits<br> money between friends
+			</p>
+			<pre class="code prettyprint lang-py">
+total_bill = 1000
+try:
+    number_of_people = <div class="nocode exception"><select autocomplete="off" name="people" id="people">
+		<option hidden disabled selected value></option>
+		<option value="0">0</option>
+		<option value="-1">-1</option>
+		<option value="3">3</option>
+	</select></div>
+    split = total_bill/number_of_people
+    print(f"Each of you has to pay ${split}")
+
+except <div class="nocode exception"><select autocomplete="off" name="exception-zero" id="exception-zero">
+	<option hidden disabled selected value></option>
+	<option value="IndexError">IndexError</option>
+	<option value="KeyError">KeyError</option>
+	<option value="ZeroDivisionError">ZeroDivisionError</option>
+</select></div>:
+    print("Split cannot be done between 0 people")
+			</pre>
+			<button type="submit" onclick="handleSubmitZero()" id="submit">Submit</button>
+			<p class="answer-zero"></p>
+		</div>
+
 	</main>
-		
-	<script src="./js/main.js"></script>
+
+	<script src="./script.js"></script>
 </body>
 
 </html>

@@ -1,8 +1,3 @@
-# python-vlab-exp-exceptions
-For the experiments created for teaching the concepts of exception handling
-## Aim
-In this experiment,user will learn the concepts of exception handling
-
 **About the User:**
 
 We are going to study Exception Handling in Python from Tanmay's real world scenario.Tanmay is a fashion designer by profession and he loves designing products using human centred approach

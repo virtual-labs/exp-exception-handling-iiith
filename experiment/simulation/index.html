@@ -5,7 +5,7 @@
 	<title> Exception Handling </title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="css/main.css">
 	<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
 </head>
@@ -34,6 +34,7 @@
 >>> print(f'Square Root of {n} is {bucket}')
                     <p id="demo-value"></p>
                 </pre>
+			<button class="sub" onclick="testValueError()">Submit</button><br>
 			<div id="reward-value"></div>
 			<button id="refresh-value" onclick="window.location.reload()" style="display: none">Try Again?</button>
 			<div class="pivot" id="pivot-value">
@@ -95,6 +96,7 @@ except <div class="nocode exception"><select autocomplete="off" name="Exception"
 >>> ball = paint_buckets[bucket_id]
 				<p id="demo-key"></p>
 			</pre>
+			<button class="sub" onclick="testValueError()">Submit</button><br>
 			<div id="reward-key"></div>
 			<button id="refresh-key" onclick="window.location.reload()" style="display: none">Try Again?</button>
 			<div id="pivot-key" class="pivot">
@@ -153,6 +155,7 @@ except <div class="nocode exception"><select autocomplete="off" name="Exception"
 >>> ball = bucket[bucket_idx]
                     <p id="demo-index"></p>
                 </pre>
+			<button class="sub" onclick="testValueError()">Submit</button><br>
 			<div id="reward-index"></div>
 			<button id="refresh-index" onclick="window.location.reload()" style="display: none">Try Again?</button>
 			<div id="piv-index" class="pivot">
@@ -217,7 +220,8 @@ except <div class="nocode exception"><select autocomplete="off" name="exception-
 >>> rem_balls = num_balls % division_bucket
 >>> print("{num_balls} % {division_bucket} is {rem_balls}.")
                     <p id="demo-zero"></p>
-                </pre>
+                </pre>			
+			<button class="sub" onclick="testValueError()">Submit</button>
 			<div id="reward-zero"></div>
 			<button id="refresh-zero" onclick="window.location.reload()" style="display: none">Try Again?</button>
 			<div id="pivot-zero" class="pivot">
@@ -260,7 +264,7 @@ except <div class="nocode exception"><select autocomplete="off" name="exception-
 
 	</main>
 
-	<script src="./script.js"></script>
+	<script src="js/main.js"></script>
 </body>
 
 </html>

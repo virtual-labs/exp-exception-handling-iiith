@@ -229,3 +229,16 @@ body {
     position: relative;
     top: 30%;
 }
+
+.sub {
+    height: 2.25rem;
+    width: 5.25rem;
+    border-radius: 5px;
+    margin: 0 auto;
+    display: block;
+    font-size: medium;
+}
+
+pre {
+    margin-bottom: 0;
+}

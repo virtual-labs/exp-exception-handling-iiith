@@ -5,26 +5,28 @@ function handleSubmitValue() {
     let answer = document.getElementsByClassName("answer-value")[0]
     if (!intOption || !exceptionOption)
         answer.innerHTML = "Select all Options"
-    else if (intOption != "int")
+    else if (intOption != "int") {
         answer.innerHTML = "Incorrect! Wrong Data Type"
-    else if (intOption === "int" && exceptionOption === "ValueError")
+    } else if (intOption === "int" && exceptionOption === "ValueError") {
         answer.innerHTML = "Correct! ValueError Exception will be raised<br> whenever user enters anything but a number"
-    else
+    } else
         answer.innerHTML = "Incorrect! Try Again"
 }
+
 function handleSubmitKey() {
     let keyOption = document.getElementById("key").value
     let exceptionOption = document.getElementById("exceptionKey").value
     let answer = document.getElementsByClassName("answer-key")[0]
     if (!keyOption || !exceptionOption)
         answer.innerHTML = "Select all Options"
-    else if (keyOption == 'Karthik' || keyOption == 'JAMES')
+    else if (keyOption == 'PratisTha' || keyOption == 'Mohit')
         answer.innerHTML = "Incorrect! Key given to the dictionary is wrong"
-    else if (keyOption === "John" && exceptionOption === "KeyError")
+    else if (keyOption === "Karthik" && exceptionOption === "KeyError")
         answer.innerHTML = "Correct! KeyError will be raised whenever user enters<br> an employee not in the database"
     else
         answer.innerHTML = "Incorrect! Try Again"
 }
+
 function handleSubmitIndex() {
     let exceptionOption = document.getElementById("exception-index").value
     let exceptionOption2 = document.getElementById("exception-index2").value
@@ -58,9 +60,6 @@ function handleSubmitZero() {
         answer.innerHTML = "Incorrect! Try Again"
 }
 
-function Refresh() {
-    location.reload();
-}
 function changeExperiment() {
     let experiment = document.getElementById("exception-name").value
     experiments.forEach(exp => {
@@ -73,7 +72,6 @@ function changeExperiment() {
             elements[1].style.display = 'none'
         }
     });
-
 }
 
 function testValueError() {
@@ -84,12 +82,12 @@ function testValueError() {
     let demo = document.getElementById("demo-value")
     let reward = document.getElementById("reward-value")
     let refresh = document.getElementById("refresh-value")
+    refresh.style.display = 'block';
     ok.style.display = 'none'
     event.currentTarget.value = "";
     if (isNaN(x) || isNaN(parseInt(x))) {
         demo.innerHTML = `ValueError: invalid literal for int() with base 10: '${x}'`;
         reward.innerHTML = "You are an exception master!";
-        refresh.style.display = 'none';
         hap.style.display = 'block';
         sho.style.display = 'none';
         animateValue(1)
@@ -99,7 +97,6 @@ function testValueError() {
     if (!(x >= 0)) {
         demo.innerHTML = "ValueError: math domain error";
         reward.innerHTML = "You are an exception master!";
-        refresh.style.display = 'none';
         hap.style.display = 'block';
         sho.style.display = 'none';
         animateValue(1)
@@ -107,7 +104,6 @@ function testValueError() {
     else {
         demo.innerHTML = "Square Root of " + x + " is " + Math.sqrt(x);
         reward.innerHTML = "You need a little more rebellion. Try again!";
-        refresh.style.display = 'block';
         sho.style.display = 'block';
         hap.style.display = 'none';
         animateValue(0)
@@ -122,10 +118,10 @@ function testIndexError() {
     let demo = document.getElementById("demo-index")
     let reward = document.getElementById("reward-index")
     let refresh = document.getElementById("refresh-index")
-    if (isNaN(x) || isNaN(parseInt(x))) { // Checking if it is a number or not
+    refresh.style.display = 'block';
+    if (isNaN(x) || isNaN(parseInt(x))) {
         demo.innerHTML = `ValueError: invalid literal for int() with base 10: '${x}'`;
         reward.innerHTML = "You generated a ValueError. Try Again!";
-        refresh.style.display = 'block';
         sho.style.display = 'block';
         hap.style.display = 'none';
     } else {
@@ -134,13 +130,11 @@ function testIndexError() {
             demo.innerHTML = "IndexError: list index out of range";
             hap.style.display = "block";
             reward.innerHTML = "You are an exception master!";
-            refresh.style.display = 'none';
             animateIndex(0);
         }
         else {
             demo.innerHTML = "";
             reward.innerHTML = "You need a little more rebellion. Try again!";
-            refresh.style.display = 'block';
             sho.style.display = 'block';
             hap.style.display = 'none';
             if (x >= 0)
@@ -152,10 +146,10 @@ function testIndexError() {
     event.currentTarget.value = "";
 }
 
-
 function testKeyError() {
     let x = document.getElementById("gen-key").value;
     document.getElementById("ok-key").style.display = 'none';
+    document.getElementById("refresh-key").style.display = 'block';
     if (!(x === 'blue' || x === 'green' || x === 'red')) {
         document.getElementById("demo-key").innerHTML = "KeyError: " + x;
         document.getElementById("reward-key").innerHTML = "You are an exception master!";
@@ -164,10 +158,9 @@ function testKeyError() {
     }
     else {
         document.getElementById("reward-key").innerHTML = "You need a little more rebelion. Try again!";
-        document.getElementById("refresh-key").style.display = 'block';
+        document.getElementById("demo-key").innerHTML = '';
         document.getElementById("sho-key").style.display = 'block';
         document.getElementById("hap-key").style.display = 'none';
-        console.log(x)
         animateKey(x)
     }
     event.currentTarget.value = "";
@@ -177,16 +170,14 @@ function testZeroError() {
     var x = document.getElementById("zero").value;
     document.getElementById("division").innerHTML = "" + x;
     document.getElementById("division").style.display = 'block';
-    // console.log(x)
+    document.getElementById("refresh-zero").style.display = 'block';
     if (x == 0) {
         document.getElementById("demo-zero").innerHTML = "ZeroDivisionError";
         document.getElementById("reward-zero").innerHTML = "You are an exception master!";
-        document.getElementById("refresh-zero").style.display = 'none';
         animateZero(0)
     }
     else {
         document.getElementById("reward-zero").innerHTML = "You need a little more rebelion. Try again!";
-        document.getElementById("refresh-zero").style.display = 'block';
         animateZero(x)
         if (Number(x) > 10) { document.getElementById("dividend").innerHTML = 10; }
         else { document.getElementById("dividend").innerHTML = 10 % x; }
@@ -214,6 +205,7 @@ function animateValue(i) {
         })
     }
 }
+
 function animateKey(i) {
     if (i == 0) {
         anime({

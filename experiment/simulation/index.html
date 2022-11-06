@@ -56,6 +56,7 @@
 			<p style="text-align:center">Fill in the blanks to make a program that takes number of <br>students as input
 				and calculates average marks</p>
 			<pre class="prettyprint code lang-py">
+total_marks = 468 
 try:
     input = "10"
 
@@ -75,6 +76,9 @@ except <div class="nocode exception"><select autocomplete="off" name="Exception"
 		<option value="NameError">NameError</option>
 	</select></div>:
     print("Number of students has to be an Integer")
+
+finally:
+    print("Found the average marks")
 			</pre>
 
 			<button type="submit" onclick="handleSubmitValue()" id="submit">Submit</button>
@@ -121,15 +125,15 @@ except <div class="nocode exception"><select autocomplete="off" name="Exception"
 			<p style="text-align:center;">Fill in the blanks to make a program that finds out<br>the employee ID of
 				given employee</p>
 			<pre class="code prettyprint lang-py">
-IDs = {'Richard':1,'John':2,'James':3}
+IDs = {'Adyansh':1,'Karthik':2,'Pratistha':3}
 try:
 	
     # Calculate employee_id
     employee_id = IDs[<div class="nocode exception"><select autocomplete="off" name="Key" id="key">
 		<option hidden disabled selected value></option>
 		<option value="Karthik">'Karthik'</option>
-		<option value="John">'John'</option>
-		<option value="JAMES">'JAMES'</option>
+		<option value="PratisTha">'PratisTha'</option>
+		<option value="Mohit">'Mohit'</option>
 	</select></div>]
     print(f'ID is {employee_id}')
 
@@ -140,6 +144,9 @@ except <div class="nocode exception"><select autocomplete="off" name="Exception"
 	<option value="NameError">NameError</option>
 </select></div>:
     print("Employee not found")
+
+finally:
+	print("Found the employee ID")
 			</pre>
 			<button type="submit" onclick="handleSubmitKey()" id="submit">Submit</button>
 			<p class="answer-key"></p>
@@ -220,7 +227,7 @@ except <div class="nocode exception"><select autocomplete="off" name="exception-
 >>> rem_balls = num_balls % division_bucket
 >>> print("{num_balls} % {division_bucket} is {rem_balls}.")
                     <p id="demo-zero"></p>
-                </pre>			
+                </pre>
 			<button class="sub" onclick="testValueError()">Submit</button>
 			<div id="reward-zero"></div>
 			<button id="refresh-zero" onclick="window.location.reload()" style="display: none">Try Again?</button>
@@ -257,9 +264,12 @@ except <div class="nocode exception"><select autocomplete="off" name="exception-
 	<option value="ZeroDivisionError">ZeroDivisionError</option>
 </select></div>:
     print("Split cannot be done between 0 people")
+
+finally:
+	print("Split has been done")
 			</pre>
 			<button type="submit" onclick="handleSubmitZero()" id="submit">Submit</button>
-			<p class="answer-zero"></p>
+			<p class="answer-zero" style="text-align: center"></p>
 		</div>
 
 	</main>

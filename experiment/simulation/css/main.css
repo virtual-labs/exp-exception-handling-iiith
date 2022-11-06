@@ -13,7 +13,7 @@ body {
 
 .box {
     width: 28rem;
-    height: 28rem;
+    height: 30rem;
     border: 1.5px solid #000;
     border-radius: 10px;
     position: relative;
@@ -62,7 +62,6 @@ body {
 
 .code {
     border: none !important;
-    margin-top: 1.5rem;
 }
 
 .answer-index,

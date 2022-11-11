@@ -1,4 +1,16 @@
 let experiments = ['value-error', 'key-error', 'index-error', 'zero-division-error']
+window.onload = () => {
+    let curr = localStorage.getItem('currentExperiment')
+    if(curr){
+        let elements = document.getElementsByClassName('value-error')
+        elements[0].style.display = 'none'
+        elements[1].style.display = 'none'
+        elements = document.getElementsByClassName(curr)
+        elements[0].style.display = 'block'
+        elements[1].style.display = 'block'
+        document.getElementById("exception-name").value = curr
+    }
+}
 function handleSubmitValue() {
     let intOption = document.getElementById("value").value
     let exceptionOption = document.getElementById("exceptionValue").value
@@ -62,6 +74,7 @@ function handleSubmitZero() {
 
 function changeExperiment() {
     let experiment = document.getElementById("exception-name").value
+    localStorage.setItem('currentExperiment',experiment);
     experiments.forEach(exp => {
         let elements = document.getElementsByClassName(exp)
         if (exp === experiment) {

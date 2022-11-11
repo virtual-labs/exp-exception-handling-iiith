@@ -1,6 +1,6 @@
 /* You CSS goes in here */
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     overflow: auto;
     white-space: nowrap;
 }
@@ -24,13 +24,27 @@ body {
     margin: 0;
 }
 
-#submit {
+.sub {
     height: 2.25rem;
     width: 5.25rem;
     border-radius: 5px;
     margin: 0 auto;
     display: block;
     font-size: medium;
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.sub:hover {
+    background-color: #286090;
+    border-color: #204d74;
+}
+
+.try-again {
+    margin: 0 0;
 }
 
 #exception-name {
@@ -73,8 +87,8 @@ body {
 
 .pivot {
     position: absolute;
-    width: inherit;
-    bottom: 0;
+    width: 93%;
+    bottom: 3rem;
 }
 
 .ball {
@@ -144,8 +158,8 @@ body {
     width: 6.5rem;
     height: 3.25rem;
     position: absolute;
-    bottom: -3rem;
-    right: -1rem;
+    bottom: 0rem;
+    right: 0rem;
     border-radius: .2rem .2rem 2rem 2rem;
     border-bottom: 0.3rem solid rgb(90, 85, 85);
     opacity: 0.5;
@@ -153,29 +167,29 @@ body {
 
 .id3 {
     background: #0d05ec;
-    translate: -19rem;
+    translate: -18rem;
 }
 
 .id2 {
     background: #05ec0d;
-    translate: -11rem;
+    translate: -10rem;
 }
 
 .id1 {
     background: #ec0505;
-    translate: -3rem;
+    translate: -2rem;
 }
 
 .i3 {
-    translate: -19rem;
+    translate: -18rem;
 }
 
 .i2 {
-    translate: -11rem;
+    translate: -10rem;
 }
 
 .i1 {
-    translate: -3rem;
+    translate: -2rem;
 }
 
 #pivot-zero {
@@ -227,15 +241,6 @@ body {
     text-align: center;
     position: relative;
     top: 30%;
-}
-
-.sub {
-    height: 2.25rem;
-    width: 5.25rem;
-    border-radius: 5px;
-    margin: 0 auto;
-    display: block;
-    font-size: medium;
 }
 
 pre {

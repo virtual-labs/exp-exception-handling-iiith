@@ -1,8 +1,6 @@
-**About the User:**
-
 We are going to study Exception Handling in Python from Tanmay's real world scenario.Tanmay is a fashion designer by profession and he loves designing products using human centred approach
 
-` `Let us begin by reading Tanmay journey as  described below:
+Let us begin by reading Tanmay journey as  described below:
 
 ## Scenario [1]-[6]
 

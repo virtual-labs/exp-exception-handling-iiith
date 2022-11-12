@@ -4,13 +4,13 @@ We are going to study Exception Handling in Python from Tanmay's real world scen
 
 ` `Let us begin by reading Tanmay journey as  described below:
 
-## Scenario [1]-[6]
+## Scenario Image 1-6
 
-| [1]![](images/Aspose.Words.593369eb-b8e0-426a-ac44-4668e69d30d6.001.png) | [2]![](images/Aspose.Words.593369eb-b8e0-426a-ac44-4668e69d30d6.002.png) | [3]![](images/Aspose.Words.593369eb-b8e0-426a-ac44-4668e69d30d6.003.png) |
+| 1![](images/Aspose.Words.593369eb-b8e0-426a-ac44-4668e69d30d6.001.png) | 2![](images/Aspose.Words.593369eb-b8e0-426a-ac44-4668e69d30d6.002.png) | 3![](images/Aspose.Words.593369eb-b8e0-426a-ac44-4668e69d30d6.003.png) |
 | :-: | :-: | :-: |
-|[4]![](images/Aspose.Words.593369eb-b8e0-426a-ac44-4668e69d30d6.004.png)|[5]![](images/Aspose.Words.593369eb-b8e0-426a-ac44-4668e69d30d6.005.png)|[6]![](images/Aspose.Words.593369eb-b8e0-426a-ac44-4668e69d30d6.006.png)|
+|4![](images/Aspose.Words.593369eb-b8e0-426a-ac44-4668e69d30d6.004.png)|5![](images/Aspose.Words.593369eb-b8e0-426a-ac44-4668e69d30d6.005.png)|6![](images/Aspose.Words.593369eb-b8e0-426a-ac44-4668e69d30d6.006.png)|
 
-Image[1] describes that It was a long holiday weekend and hence Tanmay was partying the whole sunday night and came back home at 2 AM in the midnight, he forgets to set up his alarm and wakes up late in the in the morning at 10:00 AM, usually he wakes up at 8:30 AM , now since he is running 1 hour 30 Min late , Hence he decided to pick something outside for his breakfast. Image[2] describes that As Tanmay is an Italian food lover, he decides to have pizza for his breakfast because he thought that pizza would take less preparation time and he can have pizza while travelling to the office in his car.So, He visits a nearby store to eat pizza. Image [3] describes that Tanmay has heard a lot of craze about “pineapple on pizza”, so he decided to order pineapple pizza.Image [4] describes that At the ordering counter, When Tanmay asks for pineapple pizza, the waiter politely denies that there is no such thing termed as “pineapple pizza” exists in their store, and in fact the waitress also says that no one except tanmay has enquired for pineapple pizza and hence she said that “pineapple pizza is an **exception**!”. Image [5] describes that Since pineapple pizza was not available at the store,Tanmay was sad, but he suddenly started thinking about the waitress word i.e Exception . He started thinking about what is an exception? And then decides to study more about exception
+Image 1 describes that It was a long holiday weekend and hence Tanmay was partying the whole sunday night and came back home at 2 AM in the midnight, he forgets to set up his alarm and wakes up late in the in the morning at 10:00 AM, usually he wakes up at 8:30 AM , now since he is running 1 hour 30 Min late , Hence he decided to pick something outside for his breakfast. Image 2 describes that As Tanmay is an Italian food lover, he decides to have pizza for his breakfast because he thought that pizza would take less preparation time and he can have pizza while travelling to the office in his car.So, He visits a nearby store to eat pizza. Image 3 describes that Tanmay has heard a lot of craze about “pineapple on pizza”, so he decided to order pineapple pizza.Image 4 describes that At the ordering counter, When Tanmay asks for pineapple pizza, the waiter politely denies that there is no such thing termed as “pineapple pizza” exists in their store, and in fact the waitress also says that no one except tanmay has enquired for pineapple pizza and hence she said that “pineapple pizza is an **exception**!”. Image 5 describes that Since pineapple pizza was not available at the store,Tanmay was sad, but he suddenly started thinking about the waitress word i.e Exception . He started thinking about what is an exception? And then decides to study more about exception
 
 Now let us study more about exceptions in python!
 
@@ -155,14 +155,15 @@ KeyError occured,you are trying to access value of key which does not exists in 
 ```
 
 In the above figure, we have commented the 2nd print statement from the try clause, hence KeyError exception got executed
+Image 6 describes that Now since Tanmay has learnt about Exception,he understood the basic terminologies of Exception. Now, since he was very hungry he decided to head to the “pizza hut” store, since that store is very close to his office, so he thinks that he can grab a pizza from there and eat it at his office while working(during short-breaks).When he went to the pizza hut store he observed that there was a long queue at the ordering counter 
 
-## Scenario [7]-[12]
+## Scenario Image 7-12
 
-|<p>[7]</p><p>![](images/Aspose.Words.334cd874-3028-4f44-b81c-fcad45c04dfa.001.jpeg)</p>|[8]![](images/Aspose.Words.334cd874-3028-4f44-b81c-fcad45c04dfa.002.jpeg)|[9]![](images/Aspose.Words.334cd874-3028-4f44-b81c-fcad45c04dfa.003.jpeg)|
+|<p>7</p><p>![](images/Aspose.Words.334cd874-3028-4f44-b81c-fcad45c04dfa.001.jpeg)</p>|8![](images/Aspose.Words.334cd874-3028-4f44-b81c-fcad45c04dfa.002.jpeg)|9![](images/Aspose.Words.334cd874-3028-4f44-b81c-fcad45c04dfa.003.jpeg)|
 | :- | :- | :- |
-|<p>[10]</p><p>![](images/Aspose.Words.334cd874-3028-4f44-b81c-fcad45c04dfa.004.jpeg)</p>|<p>[11]</p><p>![](images/Aspose.Words.334cd874-3028-4f44-b81c-fcad45c04dfa.005.jpeg)</p>|<p>[12]</p><p>![](images/Aspose.Words.334cd874-3028-4f44-b81c-fcad45c04dfa.006.jpeg)</p>|
+|<p>10</p><p>![](images/Aspose.Words.334cd874-3028-4f44-b81c-fcad45c04dfa.004.jpeg)</p>|<p>11</p><p>![](images/Aspose.Words.334cd874-3028-4f44-b81c-fcad45c04dfa.005.jpeg)</p>|<p>12</p><p>![](images/Aspose.Words.334cd874-3028-4f44-b81c-fcad45c04dfa.006.jpeg)</p>|
 
-Image[7] describes that in order to avoid long queues,  tanmay decided to utilize the self ordering machines which are placed by the pizza hut on their Entrance.When he started ordering using the self ordering machine,initially he gets the following message as described stepwise  below:
+Image 7 describes that in order to avoid long queues,  tanmay decided to utilize the self ordering machines which are placed by the pizza hut on their Entrance.When he started ordering using the self ordering machine,initially he gets the following message as described stepwise  below:
 
 Step 1: The machine displays different categories of pizza available at their store. It asks the user to Press-1 if they wish to order pizza from the available categories, otherwise it says press-0 to exit
 
@@ -180,7 +181,7 @@ Step 3:Since tanmay wanted to order “veg” pizza , he typed “veg” on the 
 
 Step 4: After that the machine displayed a message to check the availability of the pizza, hence the machine asked tanmay to input the name of the pizza which he wished to order, hence he entered “vegan” to which the machine displayed an error such as “KeyError”  and tanmay was not able to understand the meaning of the same hence he decided to call the employee and take help from them. The below displayed error is the exact error which tanmay encountered on the self ordering machine.
 
-Image [8] describes that As Tanmay was running short of time, he decided to take help from the store staff member to understand what was the issue with the machine.The staff arrived and she had a look at the display screen of the ordering machine and she informed tanmay about his mistake. His mistake was instead of entering the name of the pizza which was displayed in the menu he entered something which was not available in the menu(i.e vegan pizza) which was displayed to him.At that point Tanmay felt that , The machine should have displayed exactly what mistake he made in a human-friendly manner which could have saved his lot of time. The below given image  displays the exact error message which Tanmay was Expecting. 
+Image 8 describes that As Tanmay was running short of time, he decided to take help from the store staff member to understand what was the issue with the machine.The staff arrived and she had a look at the display screen of the ordering machine and she informed tanmay about his mistake. His mistake was instead of entering the name of the pizza which was displayed in the menu he entered something which was not available in the menu(i.e vegan pizza) which was displayed to him.At that point Tanmay felt that , The machine should have displayed exactly what mistake he made in a human-friendly manner which could have saved his lot of time. The below given image  displays the exact error message which Tanmay was Expecting. 
 
 ```py
 PLEASE CHECK THE AVAILABILITY OF PIZZA
@@ -189,13 +190,13 @@ KEY ERROR
 PLEASE ENTER NAMES OF ONLY THOSE PIZZA WHICH ARE DISPALYED IN THE MENU
 ```
 
-The error which tanmay had encountered in the above output  is known as KeyError Exception.Let us understand what is keyError exception with respect to scenario[8]
+The error which tanmay had encountered in the above output  is known as KeyError Exception.Let us understand what is keyError exception with respect to scenario 8
 
 ## What is  keyError Exception?
 
 A Python KeyError exception is raised , when you are trying to access a key that is not present in the dictionary.In the above scenario when the machine asked tanmay to enter the name of the pizza which he wanted to order? To this Tanmay entered "Vegan" pizza. Now in the dictionary there is no "vegan" pizza present, hence it raised a KeyError exception.
 
-Image[9] describes that After Performing the above steps now,the machine asked Tanmay to enter how many pizzas he wished to order? To that Tanmay entered “two” instead of 2. Because of that something displayed on the screen termed as “ValueError” and some error messages were displayed which made tanmay more irritated because he was not able to understand what exactly those error messages meant?Hence he had to call the employee for help.
+Image 9 describes that After Performing the above steps now,the machine asked Tanmay to enter how many pizzas he wished to order? To that Tanmay entered “two” instead of 2. Because of that something displayed on the screen termed as “ValueError” and some error messages were displayed which made tanmay more irritated because he was not able to understand what exactly those error messages meant?Hence he had to call the employee for help.
 
 The error which was encountered by tanmay is displayed below:
 ```py
@@ -217,7 +218,7 @@ ValueError                                Traceback (most recent call last)
 ValueError: invalid literal for int() with base 10: 'two'
 ```
 
-Image[10] describes that Tanmay again decided to take help from the store staff member to understand what was the issue with the machine.The staff arrived and she had a look at the display screen of the ordering machine and she informed tanmay about his mistake. His mistake was instead of entering 2 in numerical format he entered 2 in string format which caused a ValueError. At that point Tanmay felt that , The machine should have displayed exactly what mistake he made in a human-friendly manner which could have saved him a lot of time.
+Image 10 describes that Tanmay again decided to take help from the store staff member to understand what was the issue with the machine.The staff arrived and she had a look at the display screen of the ordering machine and she informed tanmay about his mistake. His mistake was instead of entering 2 in numerical format he entered 2 in string format which caused a ValueError. At that point Tanmay felt that , The machine should have displayed exactly what mistake he made in a human-friendly manner which could have saved him a lot of time.
 
 ```py
 How Many Pizza you want to order?:two
@@ -234,7 +235,7 @@ The above error experienced by tanmay is known as ValueError Exception. Let us l
 
 ValueError in python occurs when users give an invalid value to a function but its argument is valid. For eg: when we ask python to compute the square root of a negative integer, although the negative integer is a number argument , the value is invalid. In the above example the machine has asked tanmay to enter how many pizzas he wishes to order? To this tanmay entered 2 in string format i.e "two" instead of entering it in numerical format. Hence the user tanmay had given an invalid value as an input, hence the value error occurred. The machine expected tanmay to enter a numerical value, but instead he entered a string value.
 
-Image[11] describes that Once the ValueError issue was solved, Tanmay once again started the process of ordering the pizza in the self ordering machine and he repeated all the steps explained above.Now when the machine asked to input code number of the pizza which he wished to order, Tanmay mistakenly entered the wrong code number without even realising it . Now on the screen he was able to see something such as “IndexError” and Tanmay was not able to understand the error message and hence once again he had to call the employee to take help.
+Image 11 describes that Once the ValueError issue was solved, Tanmay once again started the process of ordering the pizza in the self ordering machine and he repeated all the steps explained above.Now when the machine asked to input code number of the pizza which he wished to order, Tanmay mistakenly entered the wrong code number without even realising it . Now on the screen he was able to see something such as “IndexError” and Tanmay was not able to understand the error message and hence once again he had to call the employee to take help.
 
 ```py
 Enter Code Number of the pizza which you want to order:5
@@ -250,7 +251,7 @@ The error which is encountered in the above image by tanmay is known as IndexErr
 
 IndexError Exception in python occurs when you are trying to access an index that dosent exists. In the above example each pizza is present at a certain index in a list, that index number acts as a code number for that particular pizza. In the above scenario tanmay entered an index number which is not at all present in the list and hence he got an IndexError Exception
 
-Image[12] describes that After solving all the above errors by taking help from the employee, tanmay was finally able to order his pizza, pay the final bill displayed on the screen using his credit/debit card and finally a thank you message was displayed on the screen
+Image 12 describes that After solving all the above errors by taking help from the employee, tanmay was finally able to order his pizza, pay the final bill displayed on the screen using his credit/debit card and finally a thank you message was displayed on the screen
 
 ```py
 How Many Pizza you want to order?:2

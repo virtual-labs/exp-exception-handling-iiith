@@ -1,0 +1,248 @@
+/* You CSS goes in here */
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+}
+
+.box {
+    width: 28rem;
+    height: 30rem;
+    border: 1.5px solid #000;
+    border-radius: 10px;
+    position: relative;
+}
+
+.exception {
+    display: inline;
+    margin: 0;
+}
+
+.sub {
+    height: 2.25rem;
+    width: 5.25rem;
+    border-radius: 5px;
+    margin: 0 auto;
+    display: block;
+    font-size: medium;
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.sub:hover {
+    background-color: #286090;
+    border-color: #204d74;
+}
+
+.try-again {
+    margin: 0 0;
+}
+
+#exception-name {
+    display: block;
+    margin: 0 auto;
+    margin-top: 2.5rem;
+    width: 10rem;
+    height: 2rem;
+}
+
+.header {
+    background-color: #eee;
+    padding: 15px 0;
+    margin: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+}
+
+.key-error,
+.zero-division-error,
+.index-error {
+    display: none;
+}
+
+.thin {
+    width: 20rem;
+}
+
+.code {
+    border: none !important;
+}
+
+.answer-index,
+.answer-value,
+.answer-key {
+    margin: 10px 3px;
+    text-align: center;
+}
+
+.pivot {
+    position: absolute;
+    width: 93%;
+    bottom: 3rem;
+}
+
+.ball {
+    background: #fcba03;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 1px;
+    left: 1px;
+    border-radius: 100%;
+}
+
+.mouth-happy {
+    position: absolute;
+    background-color: black;
+    width: 21px;
+    height: 9px;
+    border-radius: 7px 7px 100px 100px;
+    top: 25px;
+    left: 10px;
+}
+
+.mouth-ok {
+    position: absolute;
+    background-color: black;
+    width: 21px;
+    height: 5px;
+    border-radius: 7px 7px 7px 7px;
+    top: 25px;
+    left: 10px;
+}
+
+.mouth-shock {
+    position: absolute;
+    background-color: black;
+    width: 21px;
+    height: 12px;
+    border-radius: 7px 7px 7px 7px;
+    top: 25px;
+    left: 10px;
+}
+
+.eyes {
+    width: 27px;
+    height: 10px;
+    position: absolute;
+    left: 8px;
+    top: 9px;
+}
+
+.right,
+.left {
+    background-color: #4f2103;
+    width: 5px;
+    height: 6px;
+    border-radius: 50px;
+    position: absolute;
+    top: 2px;
+}
+
+.right {
+    right: 2px;
+}
+
+.bucket {
+    background: #000000;
+    width: 6.5rem;
+    height: 3.25rem;
+    position: absolute;
+    bottom: 0rem;
+    right: 0rem;
+    border-radius: .2rem .2rem 2rem 2rem;
+    border-bottom: 0.3rem solid rgb(90, 85, 85);
+    opacity: 0.5;
+}
+
+.id3 {
+    background: #0d05ec;
+    translate: -18rem;
+}
+
+.id2 {
+    background: #05ec0d;
+    translate: -10rem;
+}
+
+.id1 {
+    background: #ec0505;
+    translate: -2rem;
+}
+
+.i3 {
+    translate: -18rem;
+}
+
+.i2 {
+    translate: -10rem;
+}
+
+.i1 {
+    translate: -2rem;
+}
+
+#pivot-zero {
+    float: right;
+    position: relative;
+    left: -50%;
+    width: 50%;
+}
+
+#ball-zero {
+    background: #fcba03;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    border-radius: 100%;
+    color: #000000;
+    font-weight: bolder;
+    text-align: center;
+    translate: 0 150%;
+}
+
+.dividend {
+    color: #000000;
+    font-weight: bolder;
+    text-align: center;
+    position: relative;
+    top: 30%;
+}
+
+#bucket-zero {
+    background: #000000;
+    width: 25%;
+    height: 50px;
+    float: right;
+    position: relative;
+    left: 2%;
+    border-radius: .2rem .2rem .2rem .2rem;
+    border-bottom: 0.3rem solid rgb(90, 85, 85);
+    border-top: 0.3rem solid rgb(90, 85, 85);
+    opacity: 0.7;
+    color: #ffffff;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.division {
+    color: #ffffff;
+    font-weight: bolder;
+    text-align: center;
+    position: relative;
+    top: 30%;
+}
+
+pre {
+    margin-bottom: 0;
+}

@@ -1,60 +1,104 @@
 {
-  "version": 2.0,
-  "questions": [
-      {
-          "question": "my_dict={“name”:”Nick”,”college”:”IIIT”} print(my_dict[“colleges”]) what would be the output of the same?",
-          "answers": {
-              "a": "IIIT",
-              "b": "ValueError",
-              "c": "KeyError",
-              "d": "IndexError"
-          },
-          "correctAnswer": "c",
-          "difficulty": "beginner"
-      },
-      {
-          "question": "colleges=[“IIIT”,“IIT”,“NIT”,“NMIMS”] print(colleges[4]) what would be the output of the same?",
-          "answers": {
-              "a": "NMIMS",
-              "b": "IndexError",
-              "c": "KeyError",
-              "d": "ValueError"
-          },
-          "correctAnswer": "b",
-          "difficulty": "beginner "
-      },
-      {
-          "question": "A _________ is an object with description of what went wrong followed by a traceback of where the problem occurred?",
-          "answers": {
-              "a": "Exception",
-              "b": "Error",
-              "c": "All of the above",
-              "d": "None of the above"
-          },
-          "correctAnswer": "a",
-          "difficulty": "advanced"
-      },
-      {
-          "question": "When the program has asked you to enter input in Integer format, but you entered the input in string format, which of the following Exceptions would Occur? ",
-          "answers": {
-              "a": "IndexError Exception",
-              "b": "NameError Exception",
-              "c": "ValueError Exception",
-              "d": "ZeroDivisionError Exception"
-          },
-          "correctAnswer": "c",
-          "difficulty": "intermediate"
-      },
-      {
-          "question": "Statement which can raise exceptions are kept inside except clause and the statements that handle the exceptions are kept inside try clause",
-          "answers": {
-              "a": "True",
-              "b": "False",
-              "c": "Maybe",
-              "d": "None of the above"
-          },
-          "correctAnswer": "b",
-          "difficulty": "intermediate"
-      }
-  ]
+    "version": 2.0,
+    "questions": [
+        {
+            "question": "my_dict={“name”:”Nick”,”college”:”IIIT”} print(my_dict[“colleges”]) what would be the output of the same?",
+            "answers": {
+                "a": "IIIT",
+                "b": "ValueError",
+                "c": "KeyError",
+                "d": "IndexError"
+            },
+            "correctAnswer": "c",
+            "difficulty": "beginner"
+        },
+        {
+            "question": "colleges=[“IIIT”,“IIT”,“NIT”,“NMIMS”] print(colleges[4]) what would be the output of the same?",
+            "answers": {
+                "a": "NMIMS",
+                "b": "IndexError",
+                "c": "KeyError",
+                "d": "ValueError"
+            },
+            "correctAnswer": "b",
+            "difficulty": "beginner "
+        },
+        {
+            "question": "Which keyword is used to catch and handle exceptions in Python?",
+            "answers": {
+                "a": "try",
+                "b": "except",
+                "c": "raise",
+                "d": "finally"
+            },
+            "correctAnswer": "b",
+            "difficulty": "beginner "
+        },
+        {
+            "question": "A _________ is an object with description of what went wrong followed by a traceback of where the problem occurred?",
+            "answers": {
+                "a": "Exception",
+                "b": "Error",
+                "c": "All of the above",
+                "d": "None of the above"
+            },
+            "correctAnswer": "a",
+            "difficulty": "advanced"
+        },
+         {
+            "question": "What type of exception is raised when a user provides an invalid value to a function, even though the argument itself is valid?",
+            "answers": {
+                "a": "ValueError",
+                "b": "TypeError",
+                "c": "IndexError",
+                "d": "RangeError"
+            },
+            "correctAnswer": "a",
+            "difficulty": "advanced"
+        },
+        {
+            "question": "In the scenario described in the theory section, what type of exception occurred when Tanmay mistakenly entered the wrong code number while ordering pizza?",
+            "answers": {
+                "a": "ValueError",
+                "b": "TypeError",
+                "c": "IndexError",
+                "d": "RangeError"
+            },
+            "correctAnswer": "c",
+            "difficulty": "advanced"
+        },
+        {
+            "question": "When the program has asked you to enter input in Integer format, but you entered the input in string format, which of the following Exceptions would Occur? ",
+            "answers": {
+                "a": "IndexError Exception",
+                "b": "NameError Exception",
+                "c": "ValueError Exception",
+                "d": "ZeroDivisionError Exception"
+            },
+            "correctAnswer": "c",
+            "difficulty": "intermediate"
+        },
+        {
+            "question": "What is the purpose of using exception handling in Python?",
+            "answers": {
+                "a": "To stop the program execution when an error occurs.",
+                "b": " To ignore any errors that may occur during program execution.",
+                "c": "To identify and handle specific errors gracefully.",
+                "d": "To confuse the programmer by generating random error messages."
+            },
+            "correctAnswer": "c",
+            "difficulty": "intermediate"
+        },
+        {
+            "question": "Statement which can raise exceptions are kept inside except clause and the statements that handle the exceptions are kept inside try clause",
+            "answers": {
+                "a": "True",
+                "b": "False",
+                "c": "Maybe",
+                "d": "None of the above"
+            },
+            "correctAnswer": "b",
+            "difficulty": "intermediate"
+        }
+    ]
 }

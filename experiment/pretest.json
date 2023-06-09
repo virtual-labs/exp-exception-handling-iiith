@@ -48,11 +48,11 @@
             "difficulty": "advanced"
         },
          {
-            "question": "What is the difference between the "try/except" and "try/finally" blocks in exception handling in Python?",
+            "question": "What is the difference between the \"try/except\" and \"try/finally\" blocks in exception handling in Python?",
             "answers": {
-                "a": "The "try/except" block is used to catch and handle exceptions, while the "try/finally" block is used for cleanup operations.",
-                "b": " The "try/except" block is used to ensure a specific block of code is always executed, while the "try/finally" block is used to catch and handle exceptions.",
-                "c": "The "try/except" block is used to raise an exception manually, while the "try/finally" block is used to define code that will always execute.",
+                "a": "The \"try/except\" block is used to catch and handle exceptions, while the \"try/finally\" block is used for cleanup operations.",
+                "b": " The \"try/except\" block is used to ensure a specific block of code is always executed, while the \"try/finally\" block is used to catch and handle exceptions.",
+                "c": "The \"try/except\" block is used to raise an exception manually, while the \"try/finally\" block is used to define code that will always execute.",
                 "d": "None of the above"
             },
             "correctAnswer": "a",

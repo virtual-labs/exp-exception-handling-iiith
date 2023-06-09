@@ -1,5 +1,3 @@
-### Procedure
-
 * This simulation teaches you 4 exceptions one-by-one.
 * To select which exception you want to learn, use the dropdown in the leftmost box.
 * We have two parts in every experiment - 

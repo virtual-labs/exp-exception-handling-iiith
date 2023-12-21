@@ -1,0 +1,28 @@
+
+/home/runner/work/exp-exception-handling-iiith/exp-exception-handling-iiith/experiment/simulation/js/main.js
+   21:10  warning  'changeTabs' is defined but never used         no-unused-vars
+   37:10  warning  'handleSubmitValue' is defined but never used  no-unused-vars
+   50:10  warning  'handleSubmitKey' is defined but never used    no-unused-vars
+   63:10  warning  'handleSubmitIndex' is defined but never used  no-unused-vars
+   87:10  warning  'handleSubmitZero' is defined but never used   no-unused-vars
+  103:10  warning  'changeExperiment' is defined but never used   no-unused-vars
+  118:10  warning  'testValueError' is defined but never used     no-unused-vars
+  154:10  warning  'testIndexError' is defined but never used     no-unused-vars
+  158:7   warning  'ok' is assigned a value but never used        no-unused-vars
+  188:10  warning  'testKeyError' is defined but never used       no-unused-vars
+  209:10  warning  'testZeroError' is defined but never used      no-unused-vars
+  237:5   warning  'anime' is not defined                         no-undef
+  247:5   warning  'anime' is not defined                         no-undef
+  258:5   warning  'anime' is not defined                         no-undef
+  269:7   warning  'anime' is not defined                         no-undef
+  277:7   warning  'anime' is not defined                         no-undef
+  285:7   warning  'anime' is not defined                         no-undef
+  297:5   warning  'anime' is not defined                         no-undef
+  308:7   warning  'anime' is not defined                         no-undef
+  316:7   warning  'anime' is not defined                         no-undef
+  324:7   warning  'anime' is not defined                         no-undef
+  336:5   warning  'anime' is not defined                         no-undef
+  345:5   warning  'anime' is not defined                         no-undef
+
+✖ 23 problems (0 errors, 23 warnings)
+

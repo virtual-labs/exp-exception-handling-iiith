@@ -1,0 +1,110 @@
+{
+    "version": 2.0,
+    "questions": [
+        {
+            "question": "What is the difference between Error and Exceptions?",
+            "answers": {
+                "a": "Errors can be handled by the programmer, whereas exceptions cannot be handled",
+                "b": "Exceptions can be handled by the programmer, errors cannot be handled",
+                "c": "Errors can be handled using try except block, whereas exceptions cannot be handled using try except block",
+                "d": "None of the above"
+            },
+            "correctAnswer": "b",
+            "difficulty": "beginner"
+        },
+        {
+            "question": "Which of the following is not a built-in exception in Python?",
+            "answers": {
+                "a": "ValueError",
+                "b": "TypeError",
+                "c": "ZeroDivisionError",
+                "d": "RangeError"
+            },
+            "correctAnswer": "d",
+            "difficulty": "beginner"
+        },
+        {
+            "question": "Which keyword is used to raise an exception manually in Python?",
+            "answers": {
+                "a": "try",
+                "b": "except",
+                "c": "raise",
+                "d": "finally"
+            },
+            "correctAnswer": "c",
+            "difficulty": "beginner"
+        },
+        
+        
+        {
+            "question": "Which of the following scenario holds true with respect to the finally block execution",
+            "answers": {
+                "a": "Finally block always gets executed irrespective of the errors and exceptions",
+                "b": "Finally block gets executed only when there are no errors in your program",
+                "c": "Finally block gets executed only when there is an exception in your program",
+                "d": "None of the above"
+            },
+            "correctAnswer": "a",
+            "difficulty": "advanced"
+        },
+         {
+            "question": "What is the difference between the \"try/except\" and \"try/finally\" blocks in exception handling in Python?",
+            "answers": {
+                "a": "The \"try/except\" block is used to catch and handle exceptions, while the \"try/finally\" block is used for cleanup operations.",
+                "b": " The \"try/except\" block is used to ensure a specific block of code is always executed, while the \"try/finally\" block is used to catch and handle exceptions.",
+                "c": "The \"try/except\" block is used to raise an exception manually, while the \"try/finally\" block is used to define code that will always execute.",
+                "d": "None of the above"
+            },
+            "correctAnswer": "a",
+            "difficulty": "advanced"
+        },
+        
+        
+        
+        {
+            "question": "Which of the following error occurs when the user enters an invalid input?",
+            "answers": {
+                "a": "Syntax Error",
+                "b": "Logical Error",
+                "c": "RunTime Error",
+                "d": "None of the above"
+            },
+            "correctAnswer": "c",
+            "difficulty": "intermediate"
+        },
+        {
+            "question": "When your code gets compiled successfully, and gives you the output, but the output which you have obtained is an incorrect one. This scenario is an example of?",
+            "answers": {
+                "a": "Runtime Error",
+                "b": "Logical Error",
+                "c": "Syntax Error",
+                "d": "None of the above"
+            },
+            "correctAnswer": "b",
+            "difficulty": "intermediate"
+        },
+        {
+            "question": "Which of the following is not a common built-in exception in Python?",
+            "answers": {
+                "a": "ValueError",
+                "b": "IndexError",
+                "c": "FileNotFoundError",
+                "d": "FileExistsError"
+            },
+            "correctAnswer": "d",
+            "difficulty": "intermediate"
+        },
+        
+        {
+            "question": "When the programmer is trying to import modules in his program which he have bever created is an example of which error?",
+            "answers": {
+                "a": "KeyError",
+                "b": "TypeError",
+                "c": "IndexError",
+                "d": "ModuleNotFoundError"
+            },
+            "correctAnswer": "d",
+            "difficulty": "advanced"
+        }
+    ]
+}

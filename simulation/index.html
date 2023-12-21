@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exception Handling</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/virtual-labs/virtual-style@0.0.8-b/css/style.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column">
+          <div class="v-tabs">
+            <ul>
+              <li
+                class="is-active"
+                id="value-error"
+                onclick="changeTabs(event)"
+              >
+                <a> ValueError </a>
+              </li>
+              <li id="key-error" onclick="changeTabs(event)">
+                <a> KeyError </a>
+              </li>
+              <li id="index-error" onclick="changeTabs(event)">
+                <a> IndexError </a>
+              </li>
+              <li id="zero-division-error" onclick="changeTabs(event)">
+                <a> ZeroDivisionError </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="value-error">
+      <div class="columns is-centered is-flex-direction-row is-flex-wrap-wrap">
+        <div class="column is-4-desktop is-12-tablet is-12-mobile">
+          <div
+            class="v-datalist-container"
+            style="height: 100%; position: relative"
+          >
+            <div class="v-datalist-title">Generate an Exception</div>
+            <div class="v-datalist-row v-bold">
+              Can you generate a Value Error?
+            </div>
+            <!-- prettier-ignore -->
+            <div class="v-datalist-row code">
+>>> import math
+>>> ball = int(input("Enter a positive number: "))
+<input type="text" id="num" onchange="testValueError()" />
+>>> bucket = math.sqrt(n) 
+>>> print(f'Square Root of {n} is {bucket}')
+            <div class="v-datalist-row" id="demo-value"></div></div>
+            <button
+              class="v-button"
+              id="submit-value"
+              onclick="testValueError()"
+            >
+              Submit</button
+            ><br />
+            <div class="v-datalist-row v-bold" id="reward-value"></div>
+            <button
+              id="refresh-value"
+              onclick="window.location.reload()"
+              class="v-button hidden"
+            >
+              Try Again?
+            </button>
+            <div class="v-datalist-row"></div>
+            <div class="v-datalist-row"></div>
+            <div class="v-datalist-row"></div>
+            <div class="pivot" id="pivot-value">
+              <div class="ball" id="ball-value">
+                <div
+                  id="hap-value"
+                  class="mouth-happy"
+                  style="display: none"
+                ></div>
+                <div
+                  id="ok-value"
+                  class="mouth-ok"
+                  style="display: block"
+                ></div>
+                <div
+                  id="sho-value"
+                  class="mouth-shock"
+                  style="display: none"
+                ></div>
+                <div class="eyes">
+                  <div class="right"></div>
+                  <div class="left"></div>
+                </div>
+              </div>
+            </div>
+            <div id="bucket-value" class="bucket"></div>
+          </div>
+        </div>
+        <div class="column is-4-desktop is-12-tablet is-12-mobile">
+          <div
+            class="v-datalist-container"
+            style="height: 100%; position: relative"
+          >
+            <div class="v-datalist-title">Handling Exceptions</div>
+            <div class="v-datalist-row v-bold">
+              Fill in the blanks to make a program that takes number of students
+              as input and calculates average marks
+            </div>
+            <!-- prettier-ignore -->
+            <div class="v-datalist-row code">total_marks = 468 
+try:
+input = "10"
+
+# typecast input to correct data type
+number_of_students = <select autocomplete="off" name="Value" id="value">
+		<option hidden disabled selected value></option>
+		<option value="str">str</option>
+		<option value="int">int</option>
+		<option value="bool">bool</option>
+	</select>(input)
+    average_marks = total_marks/number_of_students
+	
+		except <select autocomplete="off" name="Exception" id="exceptionValue">
+			<option hidden disabled selected value></option>
+		<option value="ValueError">ValueError</option>
+		<option value="ZeroDivisionError">ZeroDivisionError</option>
+		<option value="NameError">NameError</option>
+	</select>:
+    print("Number of students has to be an Integer")
+		
+		finally:
+    print("Found the average marks")
+			</div>
+            <button onclick="handleSubmitValue()" class="v-button" id="submit">
+              Submit
+            </button>
+            <div class="answer-value v-datalist-row v-bold"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="key-error hidden">
+      <div class="columns is-centered is-flex-direction-row is-flex-wrap-wrap">
+        <div class="column is-4-desktop is-12-tablet is-12-mobile">
+          <div
+            class="v-datalist-container"
+            style="height: 100%; position: relative"
+          >
+            <div class="v-datalist-title">Generate an Exception</div>
+            <div class="v-datalist-row v-bold">
+              Can you generate a Key Error?
+            </div>
+            <!-- prettier-ignore -->
+            <div class="v-datalist-row code">
+>>> paint_buckets: {
+	"blue": 0,
+	"green": 1,
+	"red": 2
+}
+>>> paint = int(input("Paint the ball: "))
+<input type="text" id="gen-key" onchange="testKeyError()"/>
+>>> bucket_id = paint_buckets[paint]
+>>> ball = paint_buckets[bucket_id]
+
+<div class="v-datalist-row" id="demo-key"></div></div>
+            <button class="v-button" onclick="testValueError()">Submit</button
+            ><br />
+            <div class="v-datalist-row" id="reward-key"></div>
+            <button
+              id="refresh-key"
+              onclick="window.location.reload()"
+              class="v-button hidden"
+            >
+              Try Again?
+            </button>
+            <div class="v-datalist-row"></div>
+            <div class="v-datalist-row"></div>
+            <div class="v-datalist-row"></div>
+            <div id="pivot-key" class="pivot v-datalist-row">
+              <div id="ball-key" class="ball">
+                <div
+                  id="hap-key"
+                  class="mouth-happy"
+                  style="display: none"
+                ></div>
+                <div id="ok-key" class="mouth-ok" style="display: block"></div>
+                <div
+                  id="sho-key"
+                  class="mouth-shock"
+                  style="display: none"
+                ></div>
+                <div class="eyes">
+                  <div class="right"></div>
+                  <div class="left"></div>
+                </div>
+              </div>
+            </div>
+            <div class="bucket id1"></div>
+            <div class="bucket id2"></div>
+            <div class="bucket id3"></div>
+          </div>
+        </div>
+
+        <div class="column is-4-desktop is-12-tablet is-12-mobile">
+          <div
+            class="v-datalist-container"
+            style="height: 100%; position: relative"
+          >
+            <div class="v-datalist-title">Handling Exceptions</div>
+            <div class="v-datalist-row v-bold">
+              Fill in the blanks to make a program that finds out the employee
+              ID of given employee
+            </div>
+            <!-- prettier-ignore -->
+            <div class="v-datalist-row code">
+IDs = {'Adyansh':1,'Karthik':2,'Pratistha':3}
+try:
+	
+    # Calculate employee_id
+    employee_id = IDs[<select autocomplete="off" name="Key" id="key">
+		<option hidden disabled selected value></option>
+		<option value="Karthik">'Karthik'</option>
+		<option value="PratisTha">'Shrikara'</option>
+		<option value="Mohit">'Mohit'</option>
+	</select>]
+    print(f'ID is {employee_id}')
+
+except <select autocomplete="off" name="Exception" id="exceptionKey">
+	<option hidden disabled selected value></option>
+	<option value="KeyError">KeyError</option>
+	<option value="ValueError">ValueError</option>
+	<option value="NameError">NameError</option>
+</select>:
+    print("Employee not found")
+
+finally:
+	print("Found the employee ID")
+</div>
+            <button
+              onclick="handleSubmitKey()"
+              class="v-button"
+              id="submit"
+            >
+              Submit
+            </button>
+            <div class="answer-key v-datalist-row v-bold"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="index-error hidden">
+      <div class="columns is-centered is-flex-direction-row is-flex-wrap-wrap">
+        <div class="column is-4-desktop is-12-tablet is-12-mobile">
+          <div
+            class="v-datalist-container"
+            style="height: 100%; position: relative"
+          >
+            <div class="v-datalist-title">Generate an Exception</div>
+            <div class="v-datalist-row v-bold">
+              Can you generate an Index Error?
+            </div>
+            <!-- prettier-ignore -->
+            <div class="v-datalist-row code">>>> bucket = [1,2,3]
+>>> bucket_idx = int(input("Assign a bucket to the ball: "))
+<input type="text" id="bucket" onchange="testIndexError()"/>
+>>> ball = bucket[bucket_idx]
+<div class="v-datalist-row" id="demo-index"></div></div>
+            <button class="v-button" id="submit-index" onclick="testIndexError()">Submit</button>
+            <div class="v-datalist-row v-bold" id="reward-index"></div>
+            <button
+              id="refresh-index"
+              onclick="window.location.reload()"
+              class="v-button hidden"
+            >
+              Try Again?
+            </button>
+            <div class="v-datalist-row"></div>
+            <div class="v-datalist-row"></div>
+            <div class="v-datalist-row"></div>
+            <div id="piv-index" class="pivot">
+              <div id="ball-index" class="ball">
+                <div
+                  id="hap-index"
+                  class="mouth-happy"
+                  style="display: none"
+                ></div>
+                <div
+                  id="ok-index"
+                  class="mouth-ok"
+                  style="display: block"
+                ></div>
+                <div
+                  id="sho-index"
+                  class="mouth-shock"
+                  style="display: none"
+                ></div>
+                <div class="eyes">
+                  <div class="right"></div>
+                  <div class="left"></div>
+                </div>
+              </div>
+            </div>
+            <div class="bucket i1"></div>
+            <div class="bucket i2"></div>
+            <div class="bucket i3"></div>
+          </div>
+        </div>
+
+        <div class="column is-4-desktop is-12-tablet is-12-mobile">
+          <div
+            class="v-datalist-container"
+            style="height: 100%; position: relative"
+          >
+            <div class="v-datalist-title">Handling Exceptions</div>
+            <div class="v-datalist-row v-bold">
+              Fill in the blanks to make a program that puts value at index position in array
+            </div>
+            <!-- prettier-ignore -->
+            <div class="v-datalist-row code">array = [1,123,1,2,5,14,2,41,5,1]
+try:
+    index = <select autocomplete="off" name="index" id="index">
+		<option hidden disabled selected value></option>
+		<option value="-1">-1</option>
+		<option value="10">10</option>
+		<option value="p">p</option>
+	</select>
+    value = 50
+    array[index] = value
+
+except <select autocomplete="off" name="exception-index" id="exception-index">
+	<option hidden disabled selected value></option>
+	<option value="IndexError">IndexError</option>
+	<option value="KeyError">KeyError</option>
+	<option value="ValueError">ValueError</option>
+</select>:
+    print("Index does not exist")
+
+except <select autocomplete="off" name="exception-index2" id="exception-index2">
+	<option hidden disabled selected value></option>
+	<option value="IndexError">NameError</option>
+	<option value="KeyError">KeyError</option>
+	<option value="ValueError">ValueError</option>
+</select>:
+    print("Please enter numbers only")
+</div>
+            <button
+              onclick="handleSubmitIndex()"
+              class="v-button"
+              id="submit"
+            >
+              Submit
+            </button>
+            <div class="answer-index v-datalist-row v-bold"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="zero-division-error hidden">
+      <div class="columns is-centered is-flex-direction-row is-flex-wrap-wrap">
+        <div class="column is-4-desktop is-12-tablet is-12-mobile">
+          <div
+            class="v-datalist-container"
+            style="height: 100%; position: relative"
+          >
+            <div class="v-datalist-title">Generate an Exception</div>
+            <div class="v-datalist-row v-bold">
+              Can you generate an ZeroDivision Error?
+            </div>
+            <!-- prettier-ignore -->
+            <div class="v-datalist-row code">
+>>> num_balls = 10
+>>> division_bucket = int(input("Let's do modulus: "))
+<input type="text" id="zero" onchange="testZeroError()"/>
+>>> rem_balls = num_balls % division_bucket
+>>> print(f"{num_balls} % {division_bucket} is {rem_balls}.")
+<div class="v-datalist-row" id="demo-zero"></div></div>
+            <button class="v-button" onclick="testValueError()">Submit</button>
+            <div class="v-datalist-row v-bold" id="reward-zero"></div>
+            <button
+              id="refresh-zero"
+              onclick="window.location.reload()"
+              class="v-button hidden"
+            >
+              Try Again?
+            </button>
+            <div class="v-datalist-row"></div>
+            <!-- <div class="v-datalist-row"></div> -->
+            <div id="pivot-zero" class="pivot">
+              <div class="b1" id="ball-zero">
+                <div id="dividend" class="dividend">10</div>
+              </div>
+            </div>
+            <div class="bucket" id="bucket-zero">
+              <div id="division" class="division" style="display: none"></div>
+            </div>
+            <div class="v-datalist-row"></div>
+            <div class="v-datalist-row"></div>
+            <div class="v-datalist-row"></div>
+          </div>
+        </div>
+
+        <div class="column is-4-desktop is-12-tablet is-12-mobile">
+          <div
+            class="v-datalist-container"
+            style="height: 100%; position: relative"
+          >
+            <div class="v-datalist-title">Handling Exceptions</div>
+            <div class="v-datalist-row v-bold">
+              Fill in the blanks to make a program that splits money between friends
+            </div>
+            <!-- prettier-ignore -->
+            <div class="v-datalist-row code">total_bill = 1000
+try:
+    number_of_people = <select autocomplete="off" name="people" id="people">
+		<option hidden disabled selected value></option>
+		<option value="0">0</option>
+		<option value="-1">5</option>
+		<option value="3">3</option>
+	</select>
+    split = total_bill/number_of_people
+    print(f"Each of you has to pay ${split}")
+
+except <select autocomplete="off" name="exception-zero" id="exception-zero">
+	<option hidden disabled selected value></option>
+	<option value="IndexError">IndexError</option>
+	<option value="KeyError">KeyError</option>
+	<option value="ZeroDivisionError">ZeroDivisionError</option>
+</select>:
+    print("Split cannot be done between 0 people")
+
+finally:
+	print("Split has been done")
+</div>
+            <button
+              onclick="handleSubmitZero()"
+              class="v-button"
+              id="submit"
+            >
+              Submit
+            </button>
+            <div class="answer-zero v-datalist-row v-bold"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  <script src="../assets/js/iframeResize.js"></script></body>
+</html>

@@ -53,7 +53,7 @@ function handleSubmitKey() {
   let answer = document.getElementsByClassName("answer-key")[0];
   if (!keyOption || !exceptionOption) answer.innerHTML = "Select all Options";
   else if (keyOption == "PratisTha" || keyOption == "Mohit")
-    answer.innerHTML = "Incorrect! Key given to the dictionary is wrong";
+    answer.innerHTML = "Correct! The id will not be printed but the exception will be handled because of the try except block.";
   else if (keyOption === "Karthik" && exceptionOption === "KeyError")
     answer.innerHTML =
       "Correct! KeyError will be raised whenever user enters<br> an employee not in the database";
@@ -67,34 +67,36 @@ function handleSubmitIndex() {
   let answer = document.getElementsByClassName("answer-index")[0];
   if (!exceptionOption || !exceptionOption2 || !index)
     answer.innerHTML = "Select all Options";
-  else if (index == "p")
-    answer.innerHTML = "Incorrect! Index has to be a number";
-  else if (index == "10")
-    answer.innerHTML =
-      "Incorrect! Index cannot be greater than length of array";
   else if (
     exceptionOption === "IndexError" &&
-    exceptionOption2 === "ValueError" &&
-    index === "-1"
+    exceptionOption2 === "ValueError"
   )
-    answer.innerHTML =
+  {
+    if(index == "-1")
+      answer.innerHTML =
       "Correct! IndexError will be raised whenever index is out of<br> range and ValueError when index is anything but a number";
+    else if (index == "p")
+      answer.innerHTML = "Correct! Index will raise KeyError which will be handled by the try except block.";
+    else if (index == "10")
+      answer.innerHTML =
+        "Correct! Index will be raise IndexError which will be handled by the try except block.";
+  }
   else answer.innerHTML = "Incorrect! Try Again";
 }
 
 function handleSubmitZero() {
+  console.log('hi')
   let exceptionOption = document.getElementById("exception-zero").value;
   let people = document.getElementById("people").value;
   let answer = document.getElementsByClassName("answer-zero")[0];
   if (!exceptionOption || !people) answer.innerHTML = "Select all Options";
-  else if (people == "-1")
-    answer.innerHTML =
-      "Incorrect! Number of people to split cannot be negative";
-  else if (people == "-1")
-    answer.innerHTML = "Incorrect! Split cannot be done between 0 people";
-  else if (exceptionOption === "ZeroDivisionError" && people === "3")
-    answer.innerHTML =
+  else if (exceptionOption === "ZeroDivisionError"){
+    if (people == "0")
+      answer.innerHTML = "Correct! Split cannot be done between 0 people so ZeroDivisionError raised.";
+    else
+      answer.innerHTML =
       "Correct! ZeroDivisionError will be raised whenever<br> number of people is 0";
+  }
   else answer.innerHTML = "Incorrect! Try Again";
 }
 
